@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABDCAYAAADHyrhzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFb0lEQVR4nO2ce4hUVRzHT++nJL3Edef8xleaUSlmBWFoSA8pKSIhshf0wIiyIsgU6g/DHhDUH0VJD1qDCBRNlogkESKoNijT+f3u6O7mLma5D3fd3Jn5nXvvibPrOvuYGXfuc/T6hd9/h3vu+dzv/c2553fOCHFa8UhfsftiljjfhsyDLPE5hsxqBfimCZa4loFetNOZR1nSLbouc5k4laRTWGenrEdY0ucKsEUB6WqCJR5iSZtYZp7NA80WJ5v0LJxQAHyMJf3AgE61ACqGxD8Y8CUDWdSy9GS6XAG+zkDdgQIo6RhiBvwiD9bVopakJ/1+kZK4noGOhg1hDBRAhwEbasIpCqz7WNL+qCGUyC29DLRKix1nRw5B17ddoIA+ihtCiZzycw4wHRmIQmrPNUpiJvaBl391OhTQXaGD4LR1EwN1xj3gcQCxOY1PhwZCpfAeBuyPe6BVAHEZ8NXgQUi6jSXm4x6gJygSXw4MBNfTAgbqi3tQfhxSAHzcNwidwjqW+G/cA/LvDmLzveMdhNBnMuD2uAcSoEPazSzZEwyW9FrcAwgeCG2rGkR+yp6ZXhOm3dCtnW29oYe9uMUTEFvSA9W5Ajy+HtMt7bKjXdcNPeyVB7y64289rfmScYFQQPd6taF9a3MkIEw46w55f2UkrRsnDPzFM4wV7SNvuLFX2/fv1/aiFm0vbC7GV4fLD/K7IyPbmlj2l7Y/7RrpjE+6vOcOib0aWidWBpHGO/wkKGf1P8VBtRW0mmGVhvZxV3kYm3rKX39n3whofu6VAddUzhUSG/10YH/QWXxy73eUb+cRhv3MgWK7P3P+YEg6WPaTX0/bdyUDKV/OaOwtwljRHjgMNXevdp1jbbuVLxjH4s7SrgB6we/FzdMauFHH1eq6vcHDMH205I+3VXOyft3xZel8IXGnXxhujz04oOZ8xXa+YGzqKbpvSYtfGEfGvCp6ctOFvr9K03Q8+6sF+0KDoa7fW+znqtIJuiogkLl51K9I5na/F60mfMEIOMaseZhqlkosDPpmdPLcmFQYSpI18jUB+jWpMMx0Qs/Zfe5wZ3QmFYaJXCo7fVjOIE4yjAJYcwd/Vmdkz4u6c7vGYHDKWjgIo373pUmHoYaKTmbCdRoGLh6EIfQZpgKlEuwMTuENwyddPUmGkU/jrGHzDNyTVBimyGT2mg13xuYEw2gf/fm+PsEwto+AYadoeVJhKKB3Siz5oZtQGGM3tiigXUmDMfCRNgsnjIUho8sbtQNjVL4YUl5m50QGY0MFGJujg2E275aEYaSAfosExsbu8jAae6NyRX/FmmtBWk9GcSPOlp7yMHb2ReQM3CAqSc9vOif0Ta4zLe22F8rCcLuU73rIOFxhm20X4kRioFVBd24vb9POKwe183aHdnb1lwcx5A7KaefdjoHarf1wexgwGk4I4vhijyQKsnPnx/9OCKASmIBB9OekNU2MVyrgOoqpmLuHladwmo4GC0PiWlGtGOjroO0Ze0hE4/yqYWhonejl9FCtBkvMFSA7r2oQQ+Kp1o0sqXCKwHhK+FVB0hNRfsSFEpI+FEGJAdectI4A2qqFPksEKQX41kkHQuK3GlrPF2GIU/h84CcSQ3MENpgZtQhTtsSH4jicVwUEV0l6w5RARBTKA82OcjGoChAdCqylIpYjnEDvRV2AKg+Ctuop2XoRpwqQnack/RQfCGxRMnO3qCUpaS2JEgpLajUJPbRfiyCkABeZo9lhHOUyC7hmF7MpbcRyoNdPTjF/DaEkfeZnwcjsKhr4pwSglXrqrkniVFBO0lSVwmXmNKFZcmOJWxjwewXUZIIl7TAnhQZcJXGtefqFerzWHA+L+95FEvU/6Gq5jJPo6LwAAAAASUVORK5CYII=" type="image/icon type" style="border-radius:20%;">
+    
+    <title>Tasker</title>
+</head>
+<body>
+    <header>
+       <form id="new-task-form">
+        <input type="text" id="new-task-input" placeholder="What do you have planned"/>
+        <input type="submit" id="new-task-submit" value="Add task"/>
+       </form> 
+    </header>
+
+   <div id="main">
+     <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+            <div class="content">
+                <input type="text" class="text" value="My shiny task" readonly>
+            </div>
+            <div class="action">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </div>
+        </div>
+     </section>
+   </div>
+   <script src="todo.js"></script>
+</body>
+</html>
